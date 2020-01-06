@@ -38,5 +38,3 @@ def logout(request):
 	auth.logout(request)
 	return redirect('主页')
 
-def release(request):
-	return render(request,'release.html')

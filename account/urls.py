@@ -6,5 +6,5 @@ urlpatterns = [
     path('login/', views.login,name='登陆页面'),
     path('signup/', views.signup,name='注册页面'),
     path('logout/', views.logout,name='退出页面'),
-    path('release/', views.release,name='发布页面'),
+
 ]
