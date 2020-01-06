@@ -1,0 +1,15 @@
+{% extends 'theme.html' %}
+{% block centent %}
+<style type="text/css">
+	pre {
+	 white-space: pre-wrap;
+	 word-wrap: break-word;
+	}
+</style>
+<div style="text-align:center;">
+<img src="{{ productpage.image.url }}"  height="300" align="center">
+</div>
+<pre style="width:950px;font-size:125%;margin:20px auto">
+{{productpage.intro}}
+</pre>
+{% endblock centent %}

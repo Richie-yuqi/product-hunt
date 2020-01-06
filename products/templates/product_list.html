@@ -1,4 +1,17 @@
 {% extends 'theme.html' %}
 {% block centent %}
-	我们产品的列表
+<div class="container">
+{% for product in products.all %}
+	<div class="row">
+		<div class="card" style="width: 18rem;">
+			<img src="{{ product.image.url }}" class="card-img-top" alt="Card image cap">
+		</div>
+		<div class="col-md-8" style="padding-left:30px">
+		<a href="products/{{ product.id }}"><h5 class="card-title">{{product.title}}</h5></a>
+		<br>
+		{{ product.text }}
+		</div>
+	</div>
+{% endfor %}
+</div>
 {% endblock centent %}
